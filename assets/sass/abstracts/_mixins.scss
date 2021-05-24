@@ -1,0 +1,31 @@
+//mixins
+//svg
+@keyframes rotar {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+#rueda {
+    animation: rotar 4.5s infinite linear;
+    transform-origin: 80% 80%;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(120px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#code {
+    animation: move 2.5s infinite linear;
+}

@@ -1,0 +1,235 @@
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#rueda {
+  animation: rotar 4.5s infinite linear;
+  transform-origin: 80% 80%;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(120px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+#code {
+  animation: move 2.5s infinite linear;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media screen and (max-width: 3840px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #282828;
+    height: auto;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .nav__img-container {
+    padding-left: 1rem;
+  }
+  .nav__list-container {
+    justify-self: end;
+  }
+  .nav__img {
+    height: 2rem;
+  }
+  .nav__list {
+    align-self: end;
+  }
+  .nav__item {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding-right: 1rem;
+  }
+  .nav__item--bars {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .nav {
+    grid-template-columns: 1fr 1fr;
+    padding: 0.6rem 1rem;
+  }
+  .nav__item {
+    display: none;
+  }
+  .nav__item--bars {
+    font-size: 20px;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 3840px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem 2rem;
+    padding: 0 1rem 1rem 1rem;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .grid__courses {
+    height: auto;
+    border: 1px solid #282828;
+    padding: 1rem;
+  }
+  .grid__html {
+    border: 2px dotted #585858;
+    height: auto;
+    padding: 1rem;
+  }
+  .grid__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .grid__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    padding-top: 0.8rem;
+  }
+  .grid__h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 0.6rem;
+  }
+  .grid__icons {
+    padding-top: 0.6rem;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .grid__icon {
+    padding-right: 0.6rem;
+  }
+  .grid__sass {
+    border: 2px dotted #585858;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .grid__about {
+    height: auto;
+    border: 1px solid #282828;
+    padding: 1.5rem;
+  }
+  .grid__description-container {
+    text-align: center;
+  }
+  .grid__about-img {
+    height: 10rem;
+    border: 0.1px solid #282828;
+    border-radius: 100%;
+  }
+  .grid__about-title {
+    padding-top: 0.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+  }
+  .grid__more-band {
+    background-color: #585858;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    padding: 0.2rem 0;
+    margin: 0.5rem 0;
+  }
+  .grid__more-list {
+    line-height: 1.4;
+  }
+  .grid__more-link {
+    text-decoration: none;
+  }
+  .grid__more-svg {
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.header__img {
+  height: 100vw;
+  justify-self: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #282828;
+  color: #fff;
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+.footer__item {
+  padding-right: 1rem;
+}
+.footer__button {
+  background: #ffaf6d;
+  border-radius: 4px;
+}
+.footer__item {
+  display: inline;
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    grid-template-columns: 1fr;
+    font-size: 16px;
+  }
+  .footer__rights {
+    padding-bottom: 1rem;
+  }
+  .footer__item {
+    display: block;
+    padding-bottom: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

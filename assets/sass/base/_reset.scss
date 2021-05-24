@@ -1,0 +1,21 @@
+//reset
+body{
+  margin: 0;
+  padding: 0;
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+

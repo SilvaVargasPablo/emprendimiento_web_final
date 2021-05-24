@@ -1,0 +1,9 @@
+//header
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    &__img {
+        height: 100vw;
+        justify-self: center;
+    }
+}

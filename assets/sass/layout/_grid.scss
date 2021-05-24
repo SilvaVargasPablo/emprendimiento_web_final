@@ -1,0 +1,96 @@
+//grid
+@media screen and (max-width: 3840px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem 2rem;
+        padding: 0 1rem 1rem 1rem;
+        font-family: $ubuntu;
+        &__courses {
+            height: auto;
+            border: 1px solid rgb(40, 40, 40);
+            padding: 1rem;
+        }
+        &__html {
+            border: 2px dotted rgb(88, 88, 88);
+            height: auto;
+            padding: 1rem;
+        }
+        &__title {
+            font-size: $x-large;
+            font-weight: $ubuntu-bold;
+            line-height: 1.0;
+        }
+        &__paragraph {
+            font-size: $medium;
+            font-weight: $ubuntu-regular;
+            line-height: 1.8;
+            padding-top: .8rem;
+        }
+        &__h3 {
+            font-size: $large;
+            font-weight: $ubuntu-bold;
+            padding-top: 0.6rem;
+        }
+        &__icons {
+            padding-top: 0.6rem;
+            font-family: $ubuntu;
+        }
+        &__icon {
+            padding-right: 0.6rem;
+        }
+        &__sass {
+            border: 2px dotted rgb(88, 88, 88);
+            height: auto;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        &__about {
+            height: auto;
+            border: 1px solid rgb(40, 40, 40);
+            padding: 1.5rem;
+        }
+        &__description-container {
+            text-align: center;
+        }
+        &__about-img {
+            height: 10rem;
+            border: 0.1px solid rgb(40, 40, 40);
+            border-radius: 100%;
+        }
+        &__about-title {
+            padding-top: 0.5rem;
+            font-size: $medium;
+            font-weight: $ubuntu-bold;
+            font-family: $ubuntu;
+            text-transform: uppercase;
+        }
+        &__more-band {
+            background-color: $sable;
+            color: $white;
+            font-size: $medium;
+            font-weight: $ubuntu-bold;
+            font-family: $ubuntu;
+            text-align: center;
+            padding: .2rem 0;
+            margin: .5rem 0;
+        }
+        &__more-list {
+            line-height: 1.4;
+        }
+        &__more-link {
+            text-decoration: none;
+        }
+        &__more-svg {
+            padding-top: 2rem;
+            text-align: center;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
